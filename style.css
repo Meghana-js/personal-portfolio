@@ -359,6 +359,47 @@ body {
   color: #fff;
 }
 
+#education-certifications {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+#education-certifications h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.education h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.education p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.certificate {
+  margin-top: 30px;
+}
+
+.certificate h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.certificate img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Contact Section */
 .contact-section {
   padding: 80px 20px;
