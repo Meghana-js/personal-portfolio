@@ -117,7 +117,6 @@ body {
 .btn.primary {
   background: #a5a488;
   color: #fff;
-  transform: scale(1.05); /* Zoom effect */
 }
 
 .btn.outline {
@@ -138,6 +137,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
   transform: scale(1.05); /* Zoom effect */
 } 
+
+  .btn:outline:hover{
+    background:#a5a488;
+    color:white;
+    transfer: scale(1.05);/* Zoom effect */
+  }
 
 .hero-right img {
   width: 550px;         /* adjust size if needed */
