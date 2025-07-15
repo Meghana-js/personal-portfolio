@@ -133,6 +133,10 @@ body {
   z-index: 0;
 }
 
+ .btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
 .hero-right img {
   width: 550px;         /* adjust size if needed */
   height: 550px;        /* keep width & height equal */
