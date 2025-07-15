@@ -1,4 +1,4 @@
-/* Enhanced Style.css with Animations and Attractive Colors */
+/* Enhanced Style.css with Professional Effects, Animations, and Colors */
 
 /* Base Reset */
 * {
@@ -20,22 +20,24 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #fefefe, #f9f9f9);
-  color: #222;
+  background: linear-gradient(to right, #fdfdfd, #f8f8f8);
+  color: #1c1c1c;
   overflow-x: hidden;
   padding-top: 80px;
+  animation: fadeIn 1s ease-in;
 }
 
 /* Navbar */
 .navbar {
-  background: #ffffffee;
+  background: #ffffffdd;
   backdrop-filter: blur(10px);
-  transition: background 0.3s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease-in-out;
 }
 
 .nav-links li a:hover {
   color: #a5a488;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .menu-icon:hover {
@@ -44,8 +46,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #fafafa, #f4f4f4);
-  animation: fadeIn 1s ease-in;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  animation: slideUp 1.2s ease-in-out;
 }
 
 .hero-left h1 {
@@ -57,8 +59,8 @@ body {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #a5a488, #c3c39a);
-  transition: 0.3s;
+  background: linear-gradient(135deg, #a5a488, #bab891);
+  transition: background 0.4s ease, transform 0.3s;
 }
 
 .btn.primary:hover {
@@ -69,16 +71,17 @@ body {
 .btn.outline:hover {
   background: #a5a488;
   color: #fff;
+  transform: scale(1.05);
 }
 
 /* About Section */
 .about-section {
-  background: #fdfdfd;
+  background: #fefefe;
   animation: fadeInUp 1s ease forwards;
 }
 
 .about-img img {
-  transition: transform 0.4s;
+  transition: transform 0.4s ease;
 }
 
 .about-img img:hover {
@@ -87,25 +90,31 @@ body {
 
 /* Skills Section */
 .skill-card {
-  background: linear-gradient(145deg, #fff, #f0f0f0);
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
   animation: fadeInUp 1s ease forwards;
 }
 
 .skill-card:hover {
   transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* Projects Section */
 .project-card {
   transition: transform 0.4s, box-shadow 0.4s;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .project-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Section */
+.contact-form .btn {
+  background: linear-gradient(135deg, #111, #333);
+}
+
 .contact-form .btn:hover {
   background: linear-gradient(135deg, #333, #000);
   transform: scale(1.05);
@@ -113,7 +122,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #1c1c1c;
+  background-color: #1a1a1a;
   animation: fadeIn 1s ease-in;
 }
 
@@ -143,5 +152,7 @@ body {
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* Responsive Adjustments maintained */
-/* (No changes made to media queries — already responsive) */
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
