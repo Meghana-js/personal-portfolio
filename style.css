@@ -99,6 +99,7 @@ body {
 .hero-left h1 span {
   color: #a5a488;
 }
+
 .buttons {
   display: flex;
   gap: 15px;
@@ -111,31 +112,30 @@ body {
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s ease; /* 🔄 Smooth animation */
-  cursor: pointer;
 }
 
 .btn.primary {
-  background: #007BFF; /*Sky Blue color */
+  background: #a5a488;
   color: #fff;
 }
 
-.btn.primary:hover {
-  background: #0056b3; /* Sky blue on hover */
-  transform: scale(1.05); /* Zoom effect */
-}
-
 .btn.outline {
-  border: 2px solid #007BFF;
-  color: #007BFF;
-  background: transparent;
+  border: 2px solid #a5a488;
+  color: #a5a488;
 }
 
-.btn.outline:hover {
-  background: #007BFF;
-  color: white;
-  transform: scale(1.05); /* Zoom effect */
+.hero-right {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
 }
+
+ .btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+} 
 
 .hero-right img {
   width: 550px;         /* adjust size if needed */
